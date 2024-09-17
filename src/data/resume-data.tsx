@@ -56,7 +56,7 @@ export const RESUME_DATA = {
   work: [
     {
       company: "Clientell",
-      link: "https://clientell.com",
+      link: "https://getclientell.com",
       badges: ["Bengaluru"],
       title: "Head of AI",
       start: "2024",
