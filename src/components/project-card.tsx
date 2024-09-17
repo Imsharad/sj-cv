@@ -11,7 +11,7 @@ interface Props {
   title: string;
   description: string;
   tags: readonly string[];
-  link?: string;
+  link?: string;  // Make link optional
 }
 
 export function ProjectCard({ title, description, tags, link }: Props) {
@@ -33,9 +33,11 @@ export function ProjectCard({ title, description, tags, link }: Props) {
               title
             )}
           </CardTitle>
-          <div className="hidden font-mono text-xs underline print:visible">
-            {link?.replace("https://", "").replace("www.", "").replace("/", "")}
-          </div>
+          {link && (
+            <div className="hidden font-mono text-xs underline print:visible">
+              {link.replace("https://", "").replace("www.", "").replace("/", "")}
+            </div>
+          )}
           <CardDescription className="font-mono text-xs print:text-[10px]">
             {description}
           </CardDescription>

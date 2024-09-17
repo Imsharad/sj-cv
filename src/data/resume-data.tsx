@@ -1,5 +1,12 @@
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
+export interface Project {
+  title: string;
+  techStack: readonly string[];
+  description: string;
+  link?: string;  // Change this to an optional string
+}
+
 export const RESUME_DATA = {
   name: "Sharad Jain",
   initials: "SJ",
@@ -123,9 +130,9 @@ export const RESUME_DATA = {
   projects: [
     {
       title: "Salesforce Digital Worker",
+      description: "Developed an AI assistant automating 80% of routine Salesforce operations, increasing team productivity by 30%.",
       techStack: ["OpenAI", "Salesforce", "NLP"],
-      description:
-        "Developed an AI assistant automating 80% of routine Salesforce operations, increasing team productivity by 30%.",
+      link: "https://example.com/salesforce-digital-worker"
     },
     {
       title: "Video Interview Platform",
@@ -151,5 +158,5 @@ export const RESUME_DATA = {
       description:
         "Led MLOps practices implementation, resulting in 40% faster model deployment and 30% reduction in production issues.",
     },
-  ],
+  ] as const satisfies readonly Project[],
 } as const;
