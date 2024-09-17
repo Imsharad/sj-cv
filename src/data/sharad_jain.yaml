@@ -1,0 +1,133 @@
+cv:
+  name: Sharad Jain
+  location: Bengaluru, India
+  email: sharadsfo@gmail.com
+  phone: +91 7999024306
+  website: https://sharadja.in
+  style: classic
+  color: black
+  social_networks:
+    - network: LinkedIn
+      username: sharadjain4
+    - network: GitHub
+      username: Imsharad
+  sections:
+    professional_experience:
+      - company: Clientell
+        position: Head of AI
+        location: Bengaluru
+        start_date: 2024-04
+        end_date: present
+        highlights:
+          - Led and mentored a team of 5 software engineers, overseeing the development and implementation of the company's AI strategy. Guided the team through 3 successful product launches and achieved a 40% increase in customer adoption of AI-powered features.
+          - Developed an OpenAI assistant-based Salesforce digital worker, automating 80% of routine Salesforce operations, including chart generation, validation rule management, and data Q&A, resulting in a 30% increase in team productivity.
+          - Streamlined Salesforce admin processes by automating validation rule management and data upload/download tasks, reducing administrative overhead by 75% and saving an estimated 20 hours per week.
+          - Implemented natural language processing for real-time chart generation, decreasing report creation time by 50% and enabling non-technical users to access insights more efficiently.
+          - Optimized Gen AI performance by fine-tuning the LLaMA 3.1 70B model with function calling signatures, reducing latency by 40% and improving overall system responsiveness.
+      - company: autoscreen.ai
+        position: Founder
+        location: Remote
+        start_date: 2023-05
+        end_date: 2024-04
+        highlights:
+          - Engineered a high-performance Node.js/Express.js backend infrastructure processing 10,000+ concurrent video interviews monthly, leveraging GPT-4 for dynamic question generation, BERT for semantic resume analysis, and a custom ensemble model for candidate scoring, achieving 99.9% uptime.
+          - Optimized video processing pipeline using AWS S3, FFmpeg for video compression, and Whisper API with custom batching algorithms, reducing transcription time by 60%. Implemented a parallel processing architecture with Redis-based job queuing, enabling near real-time analysis of candidate responses using fine-tuned BERT models for sentiment and content evaluation.
+          - Developed a robust REST API and event-driven microservices architecture using Express.js and Apache Kafka, facilitating seamless integration of multiple AI models and processing 500+ resumes per minute with 95% accuracy in candidate-job matching through custom-trained XGBoost algorithms.
+          - Pioneered integration of ColPali, a cutting-edge document retrieval model, for advanced resume parsing. Leveraged PaliGemma-3B vision language model to directly embed and analyze resume screenshots, eliminating need for OCR and complex preprocessing. Implemented multi-vector representation and late interaction scoring, resulting in 81.3 nDCG@5 score for visually complex resumes, outperforming traditional text-based retrieval methods by 15%.
+      - company: withjoy.com
+        position: Sr. Data Engineer
+        location: San Francisco, CA
+        start_date: 2020-04
+        end_date: 2023-05
+        highlights:
+          - Spearheaded monthly cross-platform marketing analytics process, integrating data from Lumalytics, Google Analytics, and internal databases to track KPIs across web and mobile channels; implemented data reconciliation methods resulting in 95% accuracy in conversion reporting and enabling data-driven optimizations that improved channel performance by 20% YoY
+          - Authored, tested, and ran Python DAGs in Airflow using various operators (Python, Bash, AWS, Postgres), building and observing data pipelines-as-code, reducing data team workload by over 60%
+          - Developed ingestion, ETL, and reverse ETL pipelines in production using SQL queries and Python, improving data processing efficiency by 40%
+          - Maintained data quality across the board, established single source of truth for canonical datasets, created data validation checks, integration tests, and unit tests, reducing data quality issues by 75%
+          - Collected, identified, and categorized individual data points throughout the data pipeline; devised data tracking plans with product and engineering teams, improving data analysis accuracy by 30%
+          - Tracked, quantified, and measured AARRR funnel parts; built canonical dashboards for marketing teams, including marketing mix models and attribution models, increasing marketing ROI by 25%
+          - Collaborated with marketing team to measure campaign performance, ROAS, Customer Lifetime Value, and Cost of Acquisition, leading to a 20% improvement in campaign effectiveness
+          - Analyzed data and built funnels and cohort charts using SQL, Python, and Looker; used statistics and visuals to find and communicate insights, driving a 15% increase in data-driven decision making
+          - Utilized Looker's LookML to create data visualizations and dashboards, including funnels, aha-moment analysis, churn analysis, and retention analysis, improving user retention by 15%
+          - Worked as a data strategist, collaborating with business leaders to evaluate areas of highest impact for data science, resulting in 3 new high-impact data initiatives
+      - company: Meta (Facebook)
+        position: Data Scientist
+        location: Menlo Park, CA
+        start_date: 2018-10
+        end_date: 2020-04
+        highlights:
+          - Implemented MLOps practices for enterprise engineering team, including automated CI/CD pipelines, version control for models and data, and continuous monitoring, resulting in 40% faster model deployment and 30% reduction in production issues.
+          - Engineered scalable data pipelines using Apache Spark and Airflow, processing 10TB+ daily data for ML model training, improving data freshness by 50% and model accuracy by 15%.
+          - Optimized user onboarding process through A/B testing and funnel analysis, reducing average activation time from 7 days to 2 days and improving new user retention by 30%.
+          - Implemented automated anomaly detection system for data quality, reducing signal-to-noise ratio by 35% month-over-month and saving 40 hours of manual review time weekly.
+          - Designed and implemented a feature store for centralized feature management, reducing feature engineering time by 60% and improving model reproducibility across teams.
+          - Led the migration of ML workflows to Kubernetes, resulting in 50% improved resource utilization and enabling seamless scaling of model training jobs.
+          - Established automated model performance monitoring and retraining pipelines, reducing model decay and maintaining a 95% SLA for prediction accuracy.
+      - company: Autodesk
+        position: Data Scientist
+        location: San Francisco, CA
+        start_date: 2017-10
+        end_date: 2018-06
+        highlights:
+          - Implemented machine learning models to predict transient infrastructure failures.
+          - Improved prediction accuracy of transient failures by 15% through feature engineering and model optimization.
+          - Built AWS Quicksight dashboard for business insights and interfaced with Data Platform Team in predictive maintenance.
+      - company: Tata Consultancy Services
+        position: Data Analyst
+        location: Pune, India
+        start_date: 2015-10
+        end_date: 2017-06
+        highlights:
+          - Designed ETL mappings using IBM Infosphere.
+          - Performed Impact Analysis on existing mappings and provided iterative feedback.
+          - Mastered multiple data repositories and devised efficient data extraction procedures.
+          - Communicated complex modeling concepts to business-facing clients effectively.
+    education:
+      - institution: University of California Davis, Graduate School of Management
+        area: Business Analytics
+        degree: MS
+        location: San Francisco, US
+        start_date: 2017-09
+        end_date: 2018-06
+      - institution: University Institute of Technology, Bhopal
+        area: Mechanical Engineering
+        degree: BS
+        location: Bhopal, India
+        start_date: 2011-08
+        end_date: 2015-05
+
+locale_catalog:
+  phone_number_format: national 
+  date_style: "MONTH_ABBREVIATION YEAR" 
+  abbreviations_for_months:
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+  full_names_of_months:
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+  month: month
+  months: months
+  year: year
+  years: years
+  present: present
+  to: to
