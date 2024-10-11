@@ -4,40 +4,32 @@ cv:
   email: sharadsfo@gmail.com
   phone: +91 7999024306
   website: https://sharadja.in
-  style: classic
-  color: black
   social_networks:
     - network: LinkedIn
       username: sharadjain4
     - network: GitHub
       username: Imsharad
   sections:
+    professional_summary:
+      - AI Engineer and Data Scientist specializing in enterprise-scale generative AI, NLP, and advanced analytics. Expertise in LLM optimization, COT frameworks, and complex SQL queries. Skilled in data engineering, ETL processes, and implementing data warehousing solutions. Proficient in leveraging SQL for in-depth data analysis and deriving actionable insights from large datasets.
     professional_experience:
-      - company: Clientell
-        position: Head of AI
+      - company: Autoscreen.ai
+        position: Sr. AI Engineer
         location: Bengaluru
-        start_date: 2024-04
+        start_date: 2023-06
         end_date: present
         highlights:
-          - Led and mentored a team of 5 software engineers, overseeing the development and implementation of the company's AI strategy. Guided the team through 3 successful product launches and achieved a 40% increase in customer adoption of AI-powered features.
-          - Developed an OpenAI assistant-based Salesforce digital worker, automating 80% of routine Salesforce operations, including chart generation, validation rule management, and data Q&A, resulting in a 30% increase in team productivity.
-          - Streamlined Salesforce admin processes by automating validation rule management and data upload/download tasks, reducing administrative overhead by 75% and saving an estimated 20 hours per week.
-          - Implemented natural language processing for real-time chart generation, decreasing report creation time by 50% and enabling non-technical users to access insights more efficiently.
-          - Optimized Gen AI performance by fine-tuning the LLaMA 3.1 70B model with function calling signatures, reducing latency by 40% and improving overall system responsiveness.
-      - company: autoscreen.ai
-        position: Founder
-        location: Remote
-        start_date: 2023-05
-        end_date: 2024-04
-        highlights:
-          - Engineered a high-performance Node.js/Express.js backend infrastructure processing 10,000+ concurrent video interviews monthly, leveraging GPT-4 for dynamic question generation, BERT for semantic resume analysis, and a custom ensemble model for candidate scoring, achieving 99.9% uptime.
-          - Optimized video processing pipeline using AWS S3, FFmpeg for video compression, and Whisper API with custom batching algorithms, reducing transcription time by 60%. Implemented a parallel processing architecture with Redis-based job queuing, enabling near real-time analysis of candidate responses using fine-tuned BERT models for sentiment and content evaluation.
-          - Developed a robust REST API and event-driven microservices architecture using Express.js and Apache Kafka, facilitating seamless integration of multiple AI models and processing 500+ resumes per minute with 95% accuracy in candidate-job matching through custom-trained XGBoost algorithms.
-          - Pioneered integration of ColPali, a cutting-edge document retrieval model, for advanced resume parsing. Leveraged PaliGemma-3B vision language model to directly embed and analyze resume screenshots, eliminating need for OCR and complex preprocessing. Implemented multi-vector representation and late interaction scoring, resulting in 81.3 nDCG@5 score for visually complex resumes, outperforming traditional text-based retrieval methods by 15%.
+          - Architected an ACRUE (Autonomous, Collaborative, Resilient, Unified, Extensible) design framework for Salesforce agents, creating a scalable system capable of autonomously managing diverse Salesforce tasks, resulting in 80% automation of routine operations and 30% increase in team productivity.
+          - Optimized Gen AI performance by fine-tuning the open-source LLaMA 3.1 70B model with function calling signatures, reducing latency by 40%, enabling cost-effective batch processing, and improving system responsiveness for real-time NLP tasks without relying on paid LLM models.
+          - Developed an advanced NLP pipeline using OpenAI's GPT-4, enabling seamless interpretation of user queries and execution of Salesforce-specific actions, resulting in a 50% reduction in customer support tickets and a 40% increase in user satisfaction scores
+          - Led a team of 5 engineers in integrating LLMs and NLP into Salesforce, resulting in a 40% increase in customer adoption of AI-powered features and 3 successful product launches.
+          - Implemented and deployed a natural language interface for Salesforce, enabling developers to interact with data using NLP, while orchestrating multiple autonomous agents to handle complex operations like queries, validations, and data ingestion.
+          - Launched Salesforce app for synthetic data generation, enabling developers to create fine-tuned models. Facilitated Llama 3.1 data distillation for smaller, faster models with higher accuracy.
+
       - company: withjoy.com
         position: Sr. Data Engineer
         location: San Francisco, CA
-        start_date: 2020-04
+        start_date: 2021-04
         end_date: 2023-05
         highlights:
           - Spearheaded monthly cross-platform marketing analytics process, integrating data from Lumalytics, Google Analytics, and internal databases to track KPIs across web and mobile channels; implemented data reconciliation methods resulting in 95% accuracy in conversion reporting and enabling data-driven optimizations that improved channel performance by 20% YoY
@@ -54,7 +46,7 @@ cv:
         position: Data Scientist
         location: Menlo Park, CA
         start_date: 2018-10
-        end_date: 2020-04
+        end_date: 2021-04
         highlights:
           - Implemented MLOps practices for enterprise engineering team, including automated CI/CD pipelines, version control for models and data, and continuous monitoring, resulting in 40% faster model deployment and 30% reduction in production issues.
           - Engineered scalable data pipelines using Apache Spark and Airflow, processing 10TB+ daily data for ML model training, improving data freshness by 50% and model accuracy by 15%.
@@ -88,46 +80,43 @@ cv:
         degree: MS
         location: San Francisco, US
         start_date: 2017-09
-        end_date: 2018-06
+        end_date: 2018-12
       - institution: University Institute of Technology, Bhopal
         area: Mechanical Engineering
         degree: BS
         location: Bhopal, India
         start_date: 2011-08
         end_date: 2015-05
+    technologies:
+      - label: Programming Languages
+        details: Python, SQL, R, Java
+      - label: Technologies
+        details: AWS, Airflow, Spark, Hadoop, Tableau, Git
 
-locale_catalog:
-  phone_number_format: national 
-  date_style: "MONTH_ABBREVIATION YEAR" 
-  abbreviations_for_months:
-    - Jan
-    - Feb
-    - Mar
-    - Apr
-    - May
-    - Jun
-    - Jul
-    - Aug
-    - Sep
-    - Oct
-    - Nov
-    - Dec
-  full_names_of_months:
-    - January
-    - February
-    - March
-    - April
-    - May
-    - June
-    - July
-    - August
-    - September
-    - October
-    - November
-    - December
-  month: month
-  months: months
-  year: year
-  years: years
-  present: present
-  to: to
+design:
+  theme: engineeringresumes
+  font: Charter
+  font_size: 10pt
+  page_size: letterpaper
+  color: black
+  margins:
+    page:
+      top: 2 cm
+      bottom: 2 cm
+      left: 2 cm
+      right: 2 cm
+    section_title:
+      top: 0.6 cm
+      bottom: 0.2 cm
+    entry_area:
+      left_and_right: 0 cm
+      vertical_between: 0.5 cm
+      date_and_location_width: 4.5 cm
+    highlights_area:
+      top: 0.10 cm
+      left: 0 cm
+      vertical_between_bullet_points: 0.10 cm
+    header:
+      vertical_between_name_and_connections: 5 pt
+      bottom: 5 pt
+      horizontal_between_connections: 10 pt

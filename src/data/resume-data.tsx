@@ -13,9 +13,9 @@ export const RESUME_DATA = {
   location: "Bengaluru, India",
   locationLink: "https://www.google.com/maps/place/Bengaluru",
   about:
-    "Head of AI with expertise in data science, machine learning, and software engineering.",
+    "Data-driven solutions architect, AI/ML engineering expert.",
   summary:
-    "As a Head of AI and experienced Data Scientist, I specialize in developing and implementing AI strategies, building scalable data pipelines, and leading teams to deliver high-impact AI solutions. With a strong background in machine learning, data engineering, and software development, I excel in solving complex problems and driving innovation across various domains.",
+    "Experienced AI leader and Data Scientist with expertise in developing and implementing agentic AI strategies. Skilled in building scalable data pipelines and leveraging advanced frameworks like chain of thought, graph of thoughts, and multi-agent collaboration. Proficient in designing and implementing agentic LLM applications using cutting-edge design patterns such as Reflection, Tool Use, Planning, and Multi-Agent Collaboration",
   avatarUrl: "https://avatars.githubusercontent.com/u/19369042",
   personalWebsiteUrl: "https://sharadja.in",
   contact: {
@@ -41,48 +41,39 @@ export const RESUME_DATA = {
   },
   education: [
     {
-      school: "University of California Davis, Graduate School of Management",
+      school: "University of California Davis, SF Campus",
       degree: "MS in Business Analytics",
       start: "2017",
-      end: "2018",
+      end: "2019",
     },
-    {
-      school: "University Institute of Technology, Bhopal",
-      degree: "BS in Mechanical Engineering",
-      start: "2011",
-      end: "2015",
-    },
+    // {
+    //   school: "University Institute of Technology, Bhopal",
+    //   degree: "BS in Mechanical Engineering",
+    //   start: "2011",
+    //   end: "2015",
+    // },
   ],
   work: [
     {
-      company: "Clientell",
-      link: "https://getclientell.com",
+      company: "Autoscreen",
+      link: "https://autoscreen.ai",
       badges: ["Bengaluru"],
-      title: "Head of AI",
-      start: "2024",
+      title: "Sr. AI Engineer",
+      start: "2023",
       end: "Present",
       description:
-        "Led AI strategy implementation, developed OpenAI assistant-based Salesforce digital worker, streamlined admin processes, and optimized Gen AI performance. Technologies: OpenAI, LLaMA, NLP, Salesforce",
+        "Led AI strategy implementation, developed OpenAI assistant-based Salesforce digital worker, streamlined admin processes, and optimized Gen AI performance. Built a synthetic data generation pipeline for schema-aware databases using LLaMA 3.1 405B model using fireworksAI, and generated smaller state-of-the-art models for data augmentation. Implemented multi-agent collaboration for LLM applications using OpenAI ASsistant API. Developed an alternate approach to multi-agent collaboration using Llama-stack of APIs to  Technologies: OpenAI, LLaMA, Mistral, LangChain, LlamaIndex, FireworksAI",
     },
-    {
-      company: "autoscreen.ai",
-      link: "https://autoscreen.ai",
-      badges: ["Remote"],
-      title: "Founder",
-      start: "2023",
-      end: "2024",
-      description:
-        "Engineered high-performance backend for video interviews, optimized video processing pipeline, developed microservices architecture, and pioneered advanced resume parsing. Technologies: Node.js, Express.js, AWS, GPT-4, BERT, XGBoost, ColPali, PaliGemma-3B",
-    },
+
     {
       company: "withjoy.com",
       link: "https://withjoy.com",
       badges: ["San Francisco, CA"],
       title: "Sr. Data Engineer",
-      start: "2020",
+      start: "2021",
       end: "2023",
       description:
-        "Led cross-platform marketing analytics, developed data pipelines, maintained data quality, and drove data-driven decision making. Technologies: Python, Airflow, SQL, Looker, AWS",
+        "Led cross-platform marketing analytics and implemented multi-touchpoint attribution framework. Developed ETL pipelines to collect and unify user identities across mobile and desktop platforms, solving the challenge of single users accessing through multiple devices. Engineered complex SQL queries to stitch user identities and create a holistic view of user journeys. Built and maintained data pipelines using Airflow for automated data processing and analysis. Implemented advanced data quality checks to ensure accuracy in cross-device user tracking. Drove data-driven decision making by providing insights on user behavior across different touchpoints. Technologies: Python, Airflow, SQL, Looker, AWS, ETL, Identity Resolution",
     },
     {
       company: "Meta (Facebook)",
@@ -90,15 +81,15 @@ export const RESUME_DATA = {
       badges: ["Menlo Park, CA"],
       title: "Data Scientist",
       start: "2018",
-      end: "2020",
+      end: "2021",
       description:
-        "Implemented MLOps practices, engineered scalable data pipelines, optimized user onboarding, and led ML workflow migration to Kubernetes. Technologies: Apache Spark, Airflow, Kubernetes, A/B testing",
+        "Implemented MLOps practices, engineered scalable data pipelines, optimized internal data engineer user onboarding, and led ML workflow migration to Kubernetes. Technologies: Apache Spark, Airflow, Kubernetes, A/B testing",
     },
     {
       company: "Autodesk",
       link: "https://autodesk.com",
       badges: ["San Francisco, CA"],
-      title: "Data Scientist",
+      title: "Data Scientist Intern",
       start: "2017",
       end: "2018",
       description:
@@ -118,14 +109,19 @@ export const RESUME_DATA = {
   skills: [
     "Python",
     "SQL",
-    "Machine Learning",
-    "Data Engineering",
+    "ETL",
     "AWS",
-    "Node.js",
-    "Express.js",
-    "Apache Spark",
     "Airflow",
-    "Kubernetes",
+    "OpenAI",
+    "LangChain",
+    "LlamaIndex",
+    "Salesforce",
+    "MLOps",
+    "A/B Testing",
+    "Natural Language Processing",
+    "Large Language Models",
+    "Data Engineering",
+
   ],
   projects: [
     {
