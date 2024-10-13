@@ -128,7 +128,6 @@ export const RESUME_DATA = {
       title: "Salesforce Digital Worker",
       description: "Developed an AI assistant automating 80% of routine Salesforce operations, increasing team productivity by 30%.",
       techStack: ["OpenAI", "Salesforce", "NLP"],
-      link: "https://example.com/salesforce-digital-worker"
     },
     {
       title: "Video Interview Platform",
