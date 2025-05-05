@@ -3,13 +3,13 @@ import React from "react";
 import { generateMockGitHubData, ContributionData } from "@/lib/mockGitHubData";
 import { GitCommit, GitPullRequest, GitBranch, AlertCircle } from "lucide-react"; // Assuming AlertCircle for Issues/Reviews if needed, or adjust
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-// Tailwind color scale for heatmap levels (GitHub style)
+// Tailwind color scale for heatmap levels (GitHub style) - updated darker shades and green tint for level 0
 const heatmapLevelColors = [
-  "bg-gray-100",      // 0: none
-  "bg-green-100",     // 1: low
-  "bg-green-300",     // 2: mid
-  "bg-green-500",     // 3: high
-  "bg-green-700",     // 4: top
+  "bg-green-50",      // 0: none (slight green tint)
+  "bg-green-200",     // 1: low
+  "bg-green-400",     // 2: mid
+  "bg-green-600",     // 3: high
+  "bg-green-800",     // 4: top
 ];
 
 interface GitHubHeatmapProps {
@@ -92,7 +92,7 @@ export default function GitHubHeatmap({ username = "Imsharad" }: GitHubHeatmapPr
   // Now safe: only access data after null-check
   const numWeeks = data.weeks.length;
   return (
-    <div className="border rounded-lg overflow-x-auto max-w-full select-none bg-white shadow-md">
+    <div className="border rounded-lg overflow-x-auto max-w-full select-none bg-gradient-radial from-gray-50 to-white shadow-md">
       <div className="p-4 border-b">
         <h2 className="text-xl font-semibold">GitHub Contributions</h2>
         <p className="text-sm text-gray-500">
@@ -102,14 +102,15 @@ export default function GitHubHeatmap({ username = "Imsharad" }: GitHubHeatmapPr
       <div className="p-4">
         <div className="overflow-x-auto">
           <div className="min-w-[700px]">
-            {/* Month labels - OG style */}
+            {/* Month labels - OG style - Show only alternate months */}
             <div className="flex mb-1">
               {months.map((month, i) => (
                 <div
                   key={i}
-                  className="text-xs text-gray-500"
                   // Use the OG width calculation for better alignment
                   style={{ width: i === 0 ? "20px" : `calc((100% - 20px) / ${months.length - 1})` }}
+                  // Only render label for index 0 (spacer) and odd indices (Jan, Mar, etc.)
+                  className={`text-xs text-gray-500 ${i > 0 && i % 2 === 0 ? 'invisible' : ''}`}
                 >
                   {month}
                 </div>
@@ -118,14 +119,14 @@ export default function GitHubHeatmap({ username = "Imsharad" }: GitHubHeatmapPr
 
             {/* Main grid */}
             <div className="flex">
-              {/* Y-axis labels - OG style */}
-              <div className="flex flex-col justify-between h-[120px] mr-2">
+              {/* Y-axis labels - Removed */}
+              {/* <div className="flex flex-col justify-between h-[120px] mr-2">
                 {weekdayLabels.map((day, i) => (
                   <div key={i} className="text-xs text-gray-500 h-5 flex items-center"> {/* Match OG: text-xs, h-5 */}
-                    {day}
+              {/*      {day}
                   </div>
                 ))}
-              </div>
+              </div> */}
               {/* Weeks grid - OG style */}
               {/* Use grid-cols-53 from globals.css, gap-1, h-[120px] */}
               <div className="flex-1 grid grid-cols-53 gap-1 h-[120px]">
