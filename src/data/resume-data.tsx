@@ -46,12 +46,12 @@ export const RESUME_DATA = {
       start: "2017",
       end: "2019",
     },
-    // {
-    //   school: "University Institute of Technology, Bhopal",
-    //   degree: "BS in Mechanical Engineering",
-    //   start: "2011",
-    //   end: "2015",
-    // },
+    {
+      school: "University Institute of Technology, Bhopal",
+      degree: "BS in Mechanical Engineering",
+      start: "2011",
+      end: "2015",
+    },
   ],
   work: [
     {

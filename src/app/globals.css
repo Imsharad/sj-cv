@@ -75,6 +75,12 @@
   }
 }
 
+@layer utilities {
+  .grid-cols-53 {
+    grid-template-columns: repeat(53, minmax(0, 1fr));
+  }
+}
+
 .print-force-new-page {
   page-break-before: always;
 }
