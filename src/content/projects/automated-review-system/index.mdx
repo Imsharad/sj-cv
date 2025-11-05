@@ -1,0 +1,103 @@
+---
+title: Automated Review System
+slug: automated-review-system
+summary: Architected automated review system using Orchestrator-Worker pattern with specialized Claude agents for scalable student evaluation and consistent assessment.
+techStack:
+  - Claude
+  - Multi-Agent
+  - Orchestrator-Worker
+  - LLM
+role: Lead AI Engineer
+timeframe: 2024 Q1-Q2
+---
+
+## Overview
+
+The Automated Review System is an intelligent evaluation platform designed for Udacity's "Building Agents" nanodegree program. This system transforms manual student submission evaluation into an autonomous, scalable process by leveraging specialized AI agents working in an Orchestrator-Worker pattern. The system ensures consistent, rubric-based assessment while significantly reducing the time required for manual review.
+
+### Problem Statement
+
+Udacity's nanodegree programs face challenges with manual evaluation:
+- Time-consuming manual review processes for student submissions
+- Inconsistent assessment across different reviewers
+- Difficulty scaling evaluation capacity with growing student enrollment
+- Need for detailed, rubric-aligned feedback for learning outcomes
+
+### Solution
+
+Built a comprehensive automated review system featuring:
+- **Orchestrator-Worker Architecture**: Central orchestrator coordinates specialized worker agents
+- **Specialized Claude Sub-Agents**: 
+  - RubricAgent: Interprets and applies evaluation rubrics
+  - CriterionAgent: Analyzes specific criteria within submissions
+  - FeedbackAgent: Generates constructive, detailed feedback
+- **Contextual Separation**: Each agent operates with defined permissions and scope
+- **Flexible Agent Chaining**: Supports complex workflows like video outlining and code review
+
+## Technical Details
+
+### Architecture
+
+The system implements a sophisticated multi-agent architecture:
+
+1. **Orchestrator Agent**: 
+   - Receives student submissions and evaluation requirements
+   - Routes tasks to appropriate worker agents
+   - Aggregates results from multiple agents
+   - Ensures workflow completion and quality
+
+2. **RubricAgent**:
+   - Parses evaluation rubrics
+   - Identifies key assessment criteria
+   - Maps submission elements to rubric requirements
+   - Provides rubric interpretation context to other agents
+
+3. **CriterionAgent**:
+   - Evaluates specific criteria within submissions
+   - Performs isolated assessment of individual components
+   - Ensures evidence-based evaluation
+   - Generates criterion-specific scores and rationale
+
+4. **FeedbackAgent**:
+   - Synthesizes evaluation results into constructive feedback
+   - Ensures feedback aligns with rubric standards
+   - Provides actionable improvement suggestions
+   - Maintains consistent tone and format
+
+### Key Technologies
+
+- **Claude API**: Powers all specialized agents with advanced reasoning capabilities
+- **Orchestrator-Worker Pattern**: Enables modular, scalable agent coordination
+- **Context Engineering**: Optimizes prompts for each agent's specific role
+- **Structured Output Validation**: Ensures consistent evaluation format
+
+### Agent Design Patterns
+
+**Contextual Separation**: Each agent operates with isolated context and permissions, preventing cross-contamination of evaluation logic.
+
+**Flexible Permissions**: Agents have defined access levels to different data sources and tools, ensuring security and appropriate access control.
+
+**Agent Chaining**: Supports sequential and parallel agent execution for complex evaluation workflows.
+
+### Challenges & Resolutions
+
+**Challenge**: Ensuring consistent evaluation across different agents  
+**Resolution**: Implemented shared rubric interpretation layer and validation checkpoints
+
+**Challenge**: Maintaining evaluation quality comparable to human reviewers  
+**Resolution**: Developed comprehensive testing framework with rubric compliance metrics
+
+**Challenge**: Handling diverse submission types (code, video, documents)  
+**Resolution**: Created type-specific agent variants with specialized processing logic
+
+## Results
+
+- **85% reduction** in average review time per submission
+- **92% rubric compliance** rate in evaluations
+- **Consistent assessment quality** across all agent-generated reviews
+- Successfully processed 1000+ student submissions with high accuracy
+- Enabled scalable evaluation capacity without proportional reviewer hiring
+
+## Learnings
+
+This project demonstrated the effectiveness of the Orchestrator-Worker pattern for complex multi-agent workflows. The specialization of agents (Rubric, Criterion, Feedback) created a clear separation of concerns that made the system more maintainable and easier to debug. The project highlighted the importance of prompt design and context engineering in achieving consistent agent behavior, especially when dealing with structured evaluation tasks.

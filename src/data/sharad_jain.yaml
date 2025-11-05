@@ -1,0 +1,122 @@
+cv:
+  name: Sharad Jain
+  location: Bengaluru, India
+  email: sharadsfo@gmail.com
+  phone: +91 7999024306
+  website: https://sharadja.in
+  social_networks:
+    - network: LinkedIn
+      username: sharadjain4
+    - network: GitHub
+      username: Imsharad
+  sections:
+    professional_summary:
+      - AI Engineer and Data Scientist specializing in enterprise-scale generative AI, NLP, and advanced analytics. Expertise in LLM optimization, COT frameworks, and complex SQL queries. Skilled in data engineering, ETL processes, and implementing data warehousing solutions. Proficient in leveraging SQL for in-depth data analysis and deriving actionable insights from large datasets.
+    professional_experience:
+      - company: Autoscreen.ai
+        position: Sr. AI Engineer
+        location: Bengaluru
+        start_date: 2023-06
+        end_date: present
+        highlights:
+          - Architected an ACRUE (Autonomous, Collaborative, Resilient, Unified, Extensible) design framework for Salesforce agents, creating a scalable system capable of autonomously managing diverse Salesforce tasks, resulting in 80% automation of routine operations and 30% increase in team productivity.
+          - Optimized Gen AI performance by fine-tuning the open-source LLaMA 3.1 70B model with function calling signatures, reducing latency by 40%, enabling cost-effective batch processing, and improving system responsiveness for real-time NLP tasks without relying on paid LLM models.
+          - Developed an advanced NLP pipeline using OpenAI's GPT-4, enabling seamless interpretation of user queries and execution of Salesforce-specific actions, resulting in a 50% reduction in customer support tickets and a 40% increase in user satisfaction scores
+          - Led a team of 5 engineers in integrating LLMs and NLP into Salesforce, resulting in a 40% increase in customer adoption of AI-powered features and 3 successful product launches.
+          - Implemented and deployed a natural language interface for Salesforce, enabling developers to interact with data using NLP, while orchestrating multiple autonomous agents to handle complex operations like queries, validations, and data ingestion.
+          - Launched Salesforce app for synthetic data generation, enabling developers to create fine-tuned models. Facilitated Llama 3.1 data distillation for smaller, faster models with higher accuracy.
+
+      - company: withjoy.com
+        position: Sr. Data Engineer
+        location: San Francisco, CA
+        start_date: 2021-04
+        end_date: 2023-05
+        highlights:
+          - Spearheaded monthly cross-platform marketing analytics process, integrating data from Lumalytics, Google Analytics, and internal databases to track KPIs across web and mobile channels; implemented data reconciliation methods resulting in 95% accuracy in conversion reporting and enabling data-driven optimizations that improved channel performance by 20% YoY
+          - Authored, tested, and ran Python DAGs in Airflow using various operators (Python, Bash, AWS, Postgres), building and observing data pipelines-as-code, reducing data team workload by over 60%
+          - Developed ingestion, ETL, and reverse ETL pipelines in production using SQL queries and Python, improving data processing efficiency by 40%
+          - Maintained data quality across the board, established single source of truth for canonical datasets, created data validation checks, integration tests, and unit tests, reducing data quality issues by 75%
+          - Collected, identified, and categorized individual data points throughout the data pipeline; devised data tracking plans with product and engineering teams, improving data analysis accuracy by 30%
+          - Tracked, quantified, and measured AARRR funnel parts; built canonical dashboards for marketing teams, including marketing mix models and attribution models, increasing marketing ROI by 25%
+          - Collaborated with marketing team to measure campaign performance, ROAS, Customer Lifetime Value, and Cost of Acquisition, leading to a 20% improvement in campaign effectiveness
+          - Analyzed data and built funnels and cohort charts using SQL, Python, and Looker; used statistics and visuals to find and communicate insights, driving a 15% increase in data-driven decision making
+          - Utilized Looker's LookML to create data visualizations and dashboards, including funnels, aha-moment analysis, churn analysis, and retention analysis, improving user retention by 15%
+          - Worked as a data strategist, collaborating with business leaders to evaluate areas of highest impact for data science, resulting in 3 new high-impact data initiatives
+      - company: Meta (Facebook)
+        position: Data Scientist
+        location: Menlo Park, CA
+        start_date: 2018-10
+        end_date: 2021-04
+        highlights:
+          - Implemented MLOps practices for enterprise engineering team, including automated CI/CD pipelines, version control for models and data, and continuous monitoring, resulting in 40% faster model deployment and 30% reduction in production issues.
+          - Engineered scalable data pipelines using Apache Spark and Airflow, processing 10TB+ daily data for ML model training, improving data freshness by 50% and model accuracy by 15%.
+          - Optimized user onboarding process through A/B testing and funnel analysis, reducing average activation time from 7 days to 2 days and improving new user retention by 30%.
+          - Implemented automated anomaly detection system for data quality, reducing signal-to-noise ratio by 35% month-over-month and saving 40 hours of manual review time weekly.
+          - Designed and implemented a feature store for centralized feature management, reducing feature engineering time by 60% and improving model reproducibility across teams.
+          - Led the migration of ML workflows to Kubernetes, resulting in 50% improved resource utilization and enabling seamless scaling of model training jobs.
+          - Established automated model performance monitoring and retraining pipelines, reducing model decay and maintaining a 95% SLA for prediction accuracy.
+      - company: Autodesk
+        position: Data Scientist
+        location: San Francisco, CA
+        start_date: 2017-10
+        end_date: 2018-06
+        highlights:
+          - Implemented machine learning models to predict transient infrastructure failures.
+          - Improved prediction accuracy of transient failures by 15% through feature engineering and model optimization.
+          - Built AWS Quicksight dashboard for business insights and interfaced with Data Platform Team in predictive maintenance.
+      - company: Tata Consultancy Services
+        position: Data Analyst
+        location: Pune, India
+        start_date: 2015-10
+        end_date: 2017-06
+        highlights:
+          - Designed ETL mappings using IBM Infosphere.
+          - Performed Impact Analysis on existing mappings and provided iterative feedback.
+          - Mastered multiple data repositories and devised efficient data extraction procedures.
+          - Communicated complex modeling concepts to business-facing clients effectively.
+    education:
+      - institution: University of California Davis, Graduate School of Management
+        area: Business Analytics
+        degree: MS
+        location: San Francisco, US
+        start_date: 2017-09
+        end_date: 2018-12
+      - institution: University Institute of Technology, Bhopal
+        area: Mechanical Engineering
+        degree: BS
+        location: Bhopal, India
+        start_date: 2011-08
+        end_date: 2015-05
+    technologies:
+      - label: Programming Languages
+        details: Python, SQL, R, Java
+      - label: Technologies
+        details: AWS, Airflow, Spark, Hadoop, Tableau, Git
+
+design:
+  theme: engineeringresumes
+  font: Charter
+  font_size: 10pt
+  page_size: letterpaper
+  color: black
+  margins:
+    page:
+      top: 2 cm
+      bottom: 2 cm
+      left: 2 cm
+      right: 2 cm
+    section_title:
+      top: 0.6 cm
+      bottom: 0.2 cm
+    entry_area:
+      left_and_right: 0 cm
+      vertical_between: 0.5 cm
+      date_and_location_width: 4.5 cm
+    highlights_area:
+      top: 0.10 cm
+      left: 0 cm
+      vertical_between_bullet_points: 0.10 cm
+    header:
+      vertical_between_name_and_connections: 5 pt
+      bottom: 5 pt
+      horizontal_between_connections: 10 pt

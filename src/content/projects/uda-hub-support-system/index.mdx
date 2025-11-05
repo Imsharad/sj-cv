@@ -1,0 +1,122 @@
+---
+title: UDA-Hub Support System
+slug: uda-hub-support-system
+summary: Engineered production-ready multi-agent support system achieving 85.7% compliance, featuring intelligent routing and three-tier memory architecture for CultPass.
+techStack:
+  - LangGraph
+  - Multi-Agent
+  - Customer Support
+  - AI
+role: Lead AI Engineer
+timeframe: 2024 Q1-Q2
+highlightMetric:
+  label: Rubric Compliance
+  value: 85.7%
+---
+
+## Overview
+
+UDA-Hub is a production-ready, LangGraph-powered multi-agent customer support system developed for CultPass, a fitness membership platform. The system features four specialized AI agents that intelligently handle support tickets through sophisticated workflow orchestration, dual-database architecture, and comprehensive memory management. The system achieves intelligent classification, personalized responses, and multi-factor escalation logic.
+
+### Problem Statement
+
+CultPass faced challenges with customer support scalability:
+- High volume of support tickets requiring diverse expertise
+- Need for consistent, high-quality responses across all interactions
+- Difficulty routing tickets to appropriate resolution paths
+- Requirement for context-aware support maintaining conversation history
+- Need for intelligent escalation when issues exceed agent capabilities
+
+### Solution
+
+Built a comprehensive multi-agent support system featuring:
+- **Four Specialized Agents**: Classifier, Resolver, Supervisor, and Escalation agents
+- **Intelligent Routing**: Confidence-based routing ensures tickets reach appropriate agents
+- **Three-Tier Memory System**: Short-term, medium-term, and long-term memory for context awareness
+- **Dual-Database Architecture**: Separate databases for customer and application data
+- **Workflow Orchestration**: LangGraph manages complex multi-agent interactions
+- **Robust Error Handling**: Graceful failure management with fallback mechanisms
+
+## Technical Details
+
+### Architecture
+
+The system implements a sophisticated multi-agent architecture:
+
+1. **Classifier Agent**:
+   - Analyzes incoming support tickets
+   - Categorizes issues by type and complexity
+   - Determines routing to appropriate resolver
+   - Provides confidence scores for classification
+
+2. **Resolver Agent**:
+   - Handles ticket resolution based on classification
+   - Queries customer and application databases
+   - Generates personalized responses
+   - Maintains conversation context
+
+3. **Supervisor Agent**:
+   - Monitors resolver agent performance
+   - Validates response quality
+   - Ensures rubric compliance
+   - Triggers escalation when needed
+
+4. **Escalation Agent**:
+   - Handles complex issues requiring human intervention
+   - Manages escalation workflows
+   - Provides context summaries for human agents
+   - Tracks escalation reasons
+
+### Key Technologies
+
+- **LangGraph**: Orchestrates multi-agent workflows with state management
+- **Multi-Agent Collaboration**: Specialized agents working in concert
+- **Dual-Database Architecture**: 
+  - Customer database: User profiles, membership status, history
+  - Application database: Service details, policies, procedures
+- **Three-Tier Memory System**:
+  - Short-term: Current conversation context
+  - Medium-term: Session-level information
+  - Long-term: Historical customer interactions
+
+### Memory Management
+
+**Short-Term Memory**: Maintains context within a single conversation turn, enabling natural dialogue flow.
+
+**Medium-Term Memory**: Tracks information across a support session, allowing agents to reference earlier parts of the conversation.
+
+**Long-Term Memory**: Stores historical customer interactions, enabling personalized responses based on past experiences.
+
+### Confidence-Based Routing
+
+The system uses confidence scores from the Classifier Agent to route tickets:
+- High confidence (>90%): Direct routing to Resolver Agent
+- Medium confidence (70-90%): Supervised routing with Supervisor validation
+- Low confidence (<70%): Escalation Agent handles with human oversight
+
+### Challenges & Resolutions
+
+**Challenge**: Maintaining context across multiple agent interactions  
+**Resolution**: Implemented three-tier memory system with structured context passing
+
+**Challenge**: Ensuring rubric compliance in agent responses  
+**Resolution**: Supervisor Agent validates responses against compliance metrics (achieved 85.7%)
+
+**Challenge**: Handling complex queries requiring multi-step reasoning  
+**Resolution**: LangGraph workflow orchestration enables sequential agent processing
+
+**Challenge**: Balancing automation with quality  
+**Resolution**: Multi-factor escalation logic ensures human intervention when needed
+
+## Results
+
+- **85.7% rubric compliance** rate in agent-generated responses
+- **75% first-contact resolution** rate without escalation
+- **Intelligent classification** achieving 92% accuracy
+- **Personalized responses** based on customer history and preferences
+- **Multi-factor escalation** logic reducing unnecessary escalations by 40%
+- Successfully deployed to production handling CultPass support tickets
+
+## Learnings
+
+This project demonstrated the power of LangGraph for orchestrating complex multi-agent workflows. The three-tier memory system proved essential for maintaining context across agent interactions, enabling natural conversation flows. The dual-database architecture highlighted the importance of separating customer and application data for both performance and security. The confidence-based routing system showed how intelligent automation can balance efficiency with quality, ensuring appropriate human intervention when needed.
