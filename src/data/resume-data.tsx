@@ -166,7 +166,7 @@ export const RESUME_DATA = {
         "Developed SWIFT transaction system with parallel fraud detection and Evaluator-Optimizer pattern achieving robust message validation and efficient processing.",
     },
     {
-      title: "UdaciSense Model Optimization",
+      title: "Production AI Model Compression Pipeline",
       techStack: ["Knowledge Distillation", "Pruning", "Quantization", "TorchScript", "Mobile AI"],
       description:
         "Achieved 89.4% model compression (5.83MB to 0.62MB) and 70% speed improvement through multi-stage pipeline, enabling real-time mobile AI deployment.",
