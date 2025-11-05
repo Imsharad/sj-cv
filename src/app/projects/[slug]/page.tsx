@@ -313,7 +313,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
 
                   if (isResultsList) {
                     return (
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6" {...props}>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                         {children}
                       </div>
                     )
@@ -346,7 +346,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                     }
 
                     return (
-                      <Card className="p-4 hover:shadow-lg transition-shadow duration-200" {...props}>
+                      <Card className="p-4 hover:shadow-lg transition-shadow duration-200">
                         <div className="flex items-start space-x-3">
                           {icon}
                           <div className="flex-1">
