@@ -125,33 +125,51 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
-      title: "Salesforce Digital Worker",
-      description: "Developed an AI assistant automating 80% of routine Salesforce operations, increasing team productivity by 30%.",
-      techStack: ["OpenAI", "Salesforce", "NLP"],
+      title: "EcoHome Energy Advisor",
+      description: "Built AI-powered smart home energy optimizer with RAG pipeline, delivering personalized EV charging and solar power recommendations for significant cost savings.",
+      techStack: ["LangGraph", "LangChain", "RAG", "AI Tools", "Weather API"],
     },
     {
-      title: "Video Interview Platform",
-      techStack: ["Node.js", "Express.js", "AWS", "GPT-4", "BERT"],
+      title: "Automated Review System",
+      techStack: ["Claude", "Multi-Agent", "Orchestrator-Worker", "LLM"],
       description:
-        "Built a scalable platform processing 10,000+ concurrent video interviews monthly with 99.9% uptime.",
+        "Architected automated review system using Orchestrator-Worker pattern with specialized Claude agents for scalable student evaluation and consistent assessment.",
     },
     {
-      title: "Advanced Resume Parser",
-      techStack: ["ColPali", "PaliGemma-3B", "Computer Vision"],
+      title: "AI Customer Service Agent",
+      techStack: ["Google ADK", "Cloud SQL", "Vertex AI", "MySQL"],
       description:
-        "Integrated cutting-edge document retrieval model for resume parsing, achieving 81.3 nDCG@5 score for complex resumes.",
+        "Developed AI customer service agent integrating Cloud SQL, Vertex AI Search, and Google Search for comprehensive pet store support with robust error handling.",
     },
     {
-      title: "Marketing Analytics Pipeline",
-      techStack: ["Python", "Airflow", "SQL", "Looker"],
+      title: "UDA-Hub Support System",
+      techStack: ["LangGraph", "Multi-Agent", "Customer Support", "AI"],
       description:
-        "Spearheaded cross-platform marketing analytics process, improving channel performance by 20% YoY.",
+        "Engineered production-ready multi-agent support system achieving 85.7% compliance, featuring intelligent routing and three-tier memory architecture for CultPass.",
     },
     {
-      title: "MLOps Implementation",
-      techStack: ["Kubernetes", "CI/CD", "Apache Spark"],
+      title: "Financial Analysis Agent",
+      techStack: ["SQL", "Yahoo Finance", "LLM", "Document Analysis", "PII Protection"],
       description:
-        "Led MLOps practices implementation, resulting in 40% faster model deployment and 30% reduction in production issues.",
+        "Created financial agent coordinating 6 specialized tools for 10-K analysis, SQL queries, and real-time market data integration with automatic PII masking.",
+    },
+    {
+      title: "Travel Agent Review System",
+      techStack: ["Multi-Agent", "ReAct", "Orchestrator-Worker", "Travel AI"],
+      description:
+        "Built automated review system with domain-specific agents for travel itinerary creation, weather compatibility analysis, and ReAct-based revision.",
+    },
+    {
+      title: "SWIFT Transaction Processor",
+      techStack: ["AI Agents", "Fraud Detection", "SWIFT", "Parallelization"],
+      description:
+        "Developed SWIFT transaction system with parallel fraud detection and Evaluator-Optimizer pattern achieving robust message validation and efficient processing.",
+    },
+    {
+      title: "UdaciSense Model Optimization",
+      techStack: ["Knowledge Distillation", "Pruning", "Quantization", "TorchScript", "Mobile AI"],
+      description:
+        "Achieved 89.4% model compression (5.83MB to 0.62MB) and 70% speed improvement through multi-stage pipeline, enabling real-time mobile AI deployment.",
     },
   ] as const satisfies readonly Project[],
 } as const;
