@@ -30,7 +30,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Missing GITHUB_TOKEN env variable on server." }, { status: 500 });
   }
 
-  // GraphQL query from mock shape
+  // GraphQL query from mock shape - excluding organization-restricted fields
   const query = `
     query($username: String!) {
       user(login: $username) {
@@ -45,17 +45,13 @@ export async function GET(req: NextRequest) {
               }
             }
           }
-          commitContributionsByRepository {
-            contributions { totalCount }
-          }
-          pullRequestContributionsByRepository {
-            contributions { totalCount }
-          }
-          issueContributionsByRepository {
-            contributions { totalCount }
-          }
-          pullRequestReviewContributionsByRepository {
-            contributions { totalCount }
+          commitContributionsByRepository(maxRepositories: 100) {
+            repository {
+              nameWithOwner
+            }
+            contributions(first: 100) {
+              totalCount
+            }
           }
         }
       }
@@ -94,15 +90,13 @@ export async function GET(req: NextRequest) {
       })),
     }));
 
-    // Compute stats
+    // Compute stats - only commits available (others removed to avoid org restrictions)
     const commits = (c.commitContributionsByRepository || []).reduce(
       (acc: number, repo: any) => acc + (repo.contributions?.totalCount || 0), 0);
-    const pullRequests = (c.pullRequestContributionsByRepository || []).reduce(
-      (acc: number, repo: any) => acc + (repo.contributions?.totalCount || 0), 0);
-    const issues = (c.issueContributionsByRepository || []).reduce(
-      (acc: number, repo: any) => acc + (repo.contributions?.totalCount || 0), 0);
-    const reviews = (c.pullRequestReviewContributionsByRepository || []).reduce(
-      (acc: number, repo: any) => acc + (repo.contributions?.totalCount || 0), 0);
+    // Set other stats to 0 since we removed those queries to avoid org restrictions
+    const pullRequests = 0;
+    const issues = 0;
+    const reviews = 0;
 
     return NextResponse.json({
       totalContributions,
@@ -120,4 +114,3 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Server error", detail: error?.message || error.toString() }, { status: 500 });
   }
 }
-
