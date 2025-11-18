@@ -121,6 +121,23 @@ export default function Page() {
             );
           })}
         </Section>
+        <Section className="print-force-new-page scroll-mb-16" id="projects">
+          <h2 className="text-xl font-bold">Projects</h2>
+          <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
+            {RESUME_DATA.projects.map((project: Project) => {
+              return (
+                <ProjectCard
+                  key={project.title}
+                  title={project.title}
+                  description={project.description}
+                  tags={project.techStack}
+                  link={project.link}
+                  slug={project.slug}
+                />
+              );
+            })}
+          </div>
+        </Section>
         <Section>
           <h2 className="text-xl font-bold">Work Experience</h2>
           {RESUME_DATA.work.map((work) => {
@@ -174,28 +191,10 @@ export default function Page() {
           </div>
         </Section>
 
-        {/* GitHub Heatmap: show after Skills, before Projects */}
+        {/* GitHub Heatmap: show after Skills */}
         <Section>
           <h2 className="text-xl font-bold mb-2">Open Source Activity</h2>
           <GitHubHeatmap />
-        </Section>
-
-        <Section className="print-force-new-page scroll-mb-16" id="projects">
-          <h2 className="text-xl font-bold">Projects</h2>
-          <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
-            {RESUME_DATA.projects.map((project: Project) => {
-              return (
-                <ProjectCard
-                  key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  tags={project.techStack}
-                  link={project.link}
-                  slug={project.slug}
-                />
-              );
-            })}
-          </div>
         </Section>
       </section>
 
