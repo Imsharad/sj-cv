@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { CommandMenu } from "@/components/command-menu";
 import { Metadata } from "next";
 import { Section } from "@/components/ui/section";
-import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { GlobeIcon, MailIcon, PhoneIcon, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA, Project } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
@@ -190,8 +190,49 @@ export default function Page() {
             })}
           </div>
         </Section>
+        <Section>
+          <h2 className="text-xl font-bold">Certificates</h2>
+          <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
+            {RESUME_DATA.certificates.map((certificate) => {
+              return (
+                <Card key={certificate.id}>
+                  <CardHeader>
+                    <div className="flex items-center justify-between gap-x-2 text-base">
+                      <h3 className="inline-flex items-center gap-x-2 font-semibold leading-none">
+                        <Award className="size-4 text-orange-500" />
+                        {certificate.platform}
+                      </h3>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="print:hidden"
+                        asChild
+                      >
+                        <a
+                          href={certificate.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          View Certificate
+                        </a>
+                      </Button>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="mt-2 text-xs print:text-[10px]">
+                    <p className="text-muted-foreground">
+                      Certificate ID: {certificate.id}
+                    </p>
+                    <p className="text-muted-foreground print:block hidden mt-1">
+                      {certificate.url}
+                    </p>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </Section>
 
-        {/* GitHub Heatmap: show after Skills */}
+        {/* GitHub Heatmap: show after Certificates */}
         <Section>
           <h2 className="text-xl font-bold mb-2">Open Source Activity</h2>
           <GitHubHeatmap />

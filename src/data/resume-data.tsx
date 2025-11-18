@@ -130,6 +130,43 @@ export const RESUME_DATA = {
     "Data Engineering",
 
   ],
+  certificates: [
+    {
+      platform: "Udacity",
+      url: "https://www.udacity.com/certificate/e/4c69e34a-b91b-11f0-838b-df8734b9782c",
+      id: "4c69e34a-b91b-11f0-838b-df8734b9782c"
+    },
+    {
+      platform: "Udacity",
+      url: "https://www.udacity.com/certificate/e/2abe6ecc-b912-11f0-aafe-e7290981af08",
+      id: "2abe6ecc-b912-11f0-aafe-e7290981af08"
+    },
+    {
+      platform: "Udacity",
+      url: "https://www.udacity.com/certificate/e/0dfc6e12-a5dd-11f0-870f-b7d5407b1654",
+      id: "0dfc6e12-a5dd-11f0-870f-b7d5407b1654"
+    },
+    {
+      platform: "Udacity",
+      url: "https://www.udacity.com/certificate/e/5bb7ae40-787a-11f0-b628-c789fb089f38",
+      id: "5bb7ae40-787a-11f0-b628-c789fb089f38"
+    },
+    {
+      platform: "Udacity",
+      url: "https://www.udacity.com/certificate/e/313cf4d4-56cb-11f0-b009-e3d4ea161056",
+      id: "313cf4d4-56cb-11f0-b009-e3d4ea161056"
+    },
+    {
+      platform: "Udacity",
+      url: "https://www.udacity.com/certificate/e/1ffd8620-56cb-11f0-8fb1-af52c7611c99",
+      id: "1ffd8620-56cb-11f0-8fb1-af52c7611c99"
+    },
+    {
+      platform: "Udacity",
+      url: "https://www.udacity.com/certificate/e/7a29344c-6cd7-11f0-a307-3ffe3037db20",
+      id: "7a29344c-6cd7-11f0-a307-3ffe3037db20"
+    }
+  ],
   projects: [
     {
       title: "EcoHome Energy Advisor",
